@@ -1,0 +1,15 @@
+tasks:
+  - name: streamlit
+    env:
+       TF_LOG: DEBUG
+    before: |
+      pip install --extra-index-url https://pypi.fury.io/arrow-nightlies --prefer-binary --pre pyarrow
+      pip install streamlit
+      python -V
+
+  
+vscode:
+  extensions:
+    - phil294.git-log--graph
+    - mhutchie.git-graph
+    - phil294.git-log--graph
